@@ -2,8 +2,6 @@ import copy
 import unittest
 from typing import List
 
-from utils import read_input_str
-
 
 def is_cave_small(from_cave):
     if "end" == from_cave or from_cave == from_cave.upper():
@@ -137,4 +135,4 @@ class Day12(unittest.TestCase):
                  "CV-start", "ng-wg", "ng-ie", "GF-ng", "ng-av", "CV-end", "ie-GF",
                  "CV-ie", "im-xq", "start-GF", "GF-ws", "wg-LY", "CV-ws", "im-CV", "CV-wg"]
         caves = CaveSystem(paths)
-        self.assertEqual(0, caves.count_paths_twice())
+        self.assertEqual(84271, caves.count_paths_twice())
